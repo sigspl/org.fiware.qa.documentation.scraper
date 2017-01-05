@@ -8,7 +8,7 @@ class FigeSpider(CrawlSpider):
     allowed_domains = ["catalogue.fiware.org"]
     start_urls = [
         "http://catalogue.fiware.org/enablers/"
-	
+
     ]
     rules = (
         Rule(LinkExtractor(allow=(),deny=('^http://catalogue.fiware.org/enablers/%20http:')), callback="parse_items", follow=True),)
