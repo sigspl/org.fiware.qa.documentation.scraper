@@ -12,4 +12,6 @@ System saves data to /app/fiware/items.json.
 
 Manual export of the results file: 
 
-```docker exec qa.documentation.scraper /app/fiware/run.sh```
+```docker cp qa.documentation.scraper:/app/fiware/items.json .```
+
+
