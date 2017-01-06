@@ -9,6 +9,10 @@ To start scraping manually, run:
 
 docker exec qa.documentation.scraper /app/fiware/run.sh. System saves data to /app/fiware/items.json.
 
+Manual export of the results file: 
+
+```docker exec qa.documentation.scraper /app/fiware/run.sh```
+
 
 
 
