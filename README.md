@@ -6,7 +6,9 @@ Currently, Catalogue scraping is scheduled for once in a week Saturday morning.
 
 To start scraping manually, run:
 
-docker exec qa.documentation.scraper /app/fiware/run.sh. System saves data to /app/fiware/items.json.
+```docker exec qa.documentation.scraper /app/fiware/run.sh.```
+
+System saves data to /app/fiware/items.json.
 
 Manual export of the results file: 
 
