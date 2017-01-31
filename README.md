@@ -17,51 +17,44 @@ QA and UAT are deployed by merging branches into the [qa] or [uat] branches and 
 | QA | [![QA] | Automatic Deploy |
 
 ###Production Deployment
-- Trigger the production build
-- Files will be deployed to \\\\192.168.157.211\deploy\E$\prod\webs\set\SetBat
-- Move the files from the deploy folder to the webs folder on each of the three production servers
-- Make sure that you only deploy to one server at a time and that the app start has finished running on the server before deploying to the next one
-- This is because there is some caching that happens on AppStart and we need to limit the database thrashing
-- See Production Server information below
+NA
 
 ## Servers
 ### Environments
 
 #### QA
-- DB: na
-- Web: na
-- URL:  na (internal only)
+- DB: NA
+- Web: NA
+- URL:  NA (internal only)
 
 #### UAT
-- DB: na
-- Web: na
-- URL: na
+- DB: NA
+- Web: NA
+- URL: NA
 
 #### Stagings
-- DB: na
-- Web: na
-- URL: na
+- DB: NA
+- Web: NA
+- URL: NA
 
 #### Production
-- DB: na
-- Web na
-- URL: na
+- DB: NA
+- Web NA
+- URL: NA
 
 
 ### Developer Notes:
-na
+NA
 
 #### Load Balancer
-The load balanced servers are directly accessible internally using these URLs:
-- na
+NA
 
 
 #### Data Caching
-na
+NA
 
 ### Output Caching
-na
+NA
 
 ## Database Backups
-
-na
+NA
