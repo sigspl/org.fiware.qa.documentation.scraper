@@ -7,7 +7,7 @@ Project is on [Github](https://github.com/sigspl/qa.documentation.scraper).
 Do your work in a branch, then submit a pull request to be reviewed by another developer.
 
 ## Deploying
-QA and UAT are deployed by merging branches into the [qa] or [uat] branches and pushing the branch to Github. Hudson monitors the QA and UAT branch on Github and will automatically build and deploy to the appropriate server(s).
+NA
 
 | Environment | Build | Notes |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
