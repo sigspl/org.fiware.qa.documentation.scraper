@@ -7,14 +7,15 @@ Project is on [Github](https://github.com/sigspl/qa.documentation.scraper).
 Do your work in a branch, then submit a pull request to be reviewed by another developer.
 
 ## Deploying
-NA
+- Use Docker to run this service
+First, need to build the base image (subfolder) with Scrapy; then run build.sh to build image and run container.
+Currently, Catalogue scraping is scheduled for once in a week Saturday morning.
+To start scraping manually, run:
+```docker exec qa.documentation.scraper /app/fiware/run.sh.```
 
-| Environment | Build | Notes |
-|-------------|------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| Master | [![Master]] | Deploys to a staging deploy folder on ATL-SETWEB1 |
-| Staging | [![Staging]] | Automatic Deploy |
-| UAT | [![UAT] | Automatic Deploy |
-| QA | [![QA] | Automatic Deploy |
+System saves data to /app/fiware/items.json.
+Manual export of the results file:
+```docker cp qa.documentation.scraper:/app/fiware/items.json .```
 
 ###Production Deployment
 NA
