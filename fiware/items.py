@@ -17,4 +17,5 @@ class FiwareEnablerItem(scrapy.Item):
     enabler = scrapy.Field()
     text = scrapy.Field()
     meta = scrapy.Field()
+    topbar = scrapy.Field()
 

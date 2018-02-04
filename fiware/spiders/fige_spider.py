@@ -24,11 +24,9 @@ class FigeSpider(CrawlSpider):
             item['enabler'] = title # will be used to identify the Enabler
             item['url'] = response.url
             # main text block in his layout
-	    item['text'] = ' ' .join( response.xpath("//*[contains(concat(' ', @class, ' '), ' field-type-text-with-summary ')]//text()").extract())
+	    item['topbar'] = ' ' .join( response.xpath("//*[contains(concat(' ', @class, ' '), ' view-api-sub-pages-list ')]//text()").extract())
+	    item['text'] = ' ' .join( response.xpath("//*[contains(concat(' ', @class, ' '), ' pane-node-content ')]//text()").extract())
 	    # information with contact person etc.
 	    item['meta'] = ' '.join ( response.xpath("//*[@id=\"block-system-main\"]/div/div/div[2]/div[1]/div/div/div/div/div/div//text()").extract())
-            #print  item['meta'] . join("foo")
-            #item['creating'] = sel.xpath('a/@href').extract()
-            #item['documentation'] = sel.xpath('text()').extract()
-            #print item['overview']
+
 	    yield item
