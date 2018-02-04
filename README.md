@@ -1,6 +1,7 @@
 # What is this?
 
 This component crawls the Generic Enabler (GE) Catalogue websites. A JSON file items.json stores the parsed content about GEs.
+https://catalogue.fiware.org/enablers
 
 # Installation
 
